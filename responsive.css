@@ -14,7 +14,6 @@ html{
     width:500px;
     position: absolute;
     /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-600px, 0);
     transform: translate(-600px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
@@ -35,7 +34,6 @@ html{
   color: #212121;
   }
   .my__info.open {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   .my__info {
@@ -110,17 +108,6 @@ html{
   }
 }
 @media screen and (min-width: 550px) and (max-width:699px){
-  
- /* .header__title{
-    display: block;
-    font-size: 2.3em;
-    z-index: 4;
-  }
-  .second__header{
-    display: block;
-    font-size: 1.4em;
-    z-index: 5;
-  }*/
   .introduction{
     max-height: 60%;
   }
