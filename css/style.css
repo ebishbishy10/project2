@@ -13,8 +13,7 @@ a{
 	text-decoration: none;
 }
 body {
-	font-family: Roboto;
-	font-size: 12px;
+	font: 12px Roboto;
 	color: #424242;
 	background-color: rgba(47, 115, 93,.2);
 }
@@ -77,9 +76,7 @@ main {
 	width: 100%;
 }
 footer {
-	margin-top:20px;
-	margin-left: 3px;
-	margin-right: 3px;
+	margin: 20px 3px 0 3px;
 	background-color: rgba(47, 115, 93,.5);
 	border-top: 1px solid #E0E0E0;
 	padding: 1em;
@@ -101,16 +98,16 @@ footer a {
 	align-items: flex-start;
 	justify-content:space-between;
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 0 auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
 	box-shadow: 1px 13px 11px -4px rgba(73,127,166,1);
 }
 .header__logo {
 	order: 0;
 	align-self: flex-start;
 	display:inline-block;
-	margin-right: 1em;
-	margin-top: 12px;
+	margin: 12px 1em;
 }
 .title__block {
 	display: inline-flex;
@@ -123,14 +120,14 @@ footer a {
 }
 .header__title {
 	display:inline-block;
+
 	font-weight: 300;
 	font-size: 4em;
 	color: #2d3c49;
 	align-self: center;
 }
 .second__header {
-	margin: 0;
-	margin-right:10px;
+	margin: 0 10px;
 	display:inline-block;
 	font-weight: 200;
 	font-size: 2em;
@@ -167,8 +164,7 @@ footer a {
 	font-size: 2em;
 	font-weight:bold;
 	color:#0c2942;
-	margin-right:30px;
-	margin-left: 50px;
+	margin: 0 30px 0 50px;
 	overflow: hidden;
 	max-width: 70ch;
 }
@@ -182,7 +178,7 @@ footer a {
 	order: 1;
 	background-color:rgba(64, 127, 127,.3);
 	background-size: cover;
-	margin-right: 20px;
+	margin: 0 20px;
 	padding: 10px 10px 20px 10px;
 }
 .my__info img {
@@ -194,8 +190,7 @@ footer a {
 	box-sizing: border-box;
 }
 .dwork, li{
-	margin-top: 50px;
-	margin-left: 10px;
+	margin: 50px 0 0 10px;
 	max-width: 700px;
 }
 .work__list, .dwork__list {
