@@ -48,9 +48,12 @@
 }
 
 .nav__list {
-  background-color: #a6acb1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color:rgba(166,172,177,.4);
   width: 100%;
-  max-height: 75px;
+  /*max-height: 75px;*/
   padding: 0;
   margin: 0;
 }
@@ -59,13 +62,13 @@
   margin: 0;
   box-sizing: border-box;
   display: inline-block;
-  width: 24%;
-  text-align: center;
-  padding: 24px;
+  text-align: left;
+  padding:10px 0 10px 0;
   text-transform: uppercase;
 }
 
 .nav a {
+  text-align: center;
   text-decoration: none;
   color: #1b537f;
   padding: 1.5em;
