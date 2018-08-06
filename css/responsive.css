@@ -1,234 +1,255 @@
- html{
-  display: block;
-  width: 100%;
-}
-@media screen and (max-width: 549px) {
-  .nav {
-    z-index: 10;
-    background-color: #fff;
-    width: 300px;
-    position: absolute;
-    transform: translate(-400px, 0);
-    transition: transform 0.3s ease;
-  }
-  .nav.open {
-    transform: translate(0, 0);
-  }
-  .nav__item {
-    display: list-item;
-    border-bottom: 1px solid #E0E0E0;
+  html{
+    display: block;
     width: 100%;
-    text-align: left;
   }
-  .nav__list{
-    flex-direction: column;
-    background-color:rgba(166,172,177,.1);
+  @media screen and (max-width: 549px) {
+    .nav {
+      z-index: 10;
+      background-color: #fff;
+      width: 300px;
+      position: absolute;
+      transform: translate(-400px, 0);
+      transition: transform 0.3s ease;
+    }
+    .nav.open {
+      transform: translate(0, 0);
+    }
+    .nav__item {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: left;
+    }
+    .nav__list {
+      flex-direction: column;
+      background-color: rgba(166,172,177,.1);
+    }
+    .nav a {
+      text-align: left;
+      max-width: 100%;
+    }
+    .header__inner {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .header__logo {
+      width: 20%;
+      margin: 0;
+      align-self: flex-start;
+    }
+    .title__block {
+      display: none;
+    }
+    .title__block2 {
+      display: block;
+      order: 2;
+      text-align: center;
+      align-self: flex-end;
+      width: 50%;
+      margin: 0 30% 5px auto;
+    }
+    .introduction {
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 20px 20px 20px ;
+    }
+    .header__title2 {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 2.2em;
+      color: #2d3c49;
+      align-self: center;
+    }
+    .second__header2 {
+      margin: 0;
+      margin-right: 10px;
+      display: inline-block;
+      font-weight: 200;
+      font-size: 1em;
+      color: #212121;
+    }
+    .my__info {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: left;
+    }
+    .header__menu {
+      align-self: center;
+      display: block;
+      position: absolute;
+      right: 10px;
+      padding: 1em;
+    }
+    .header__menu svg {
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+      fill: #E0E0E0;
+    }
+    .vison__Content {
+      background-image: none;
+      background-color: rgba(16, 89, 65,.4);
+      max-height: 500px;
+      overflow: auto;
+    }
+    .vision__title {
+      color: #4f5f6d;
+    }
+    .vision__article {
+      color: #1d629e;
+    }
+    .work__list,
+    .dwork__list {
+      flex-direction: column;
+    }
+    .work, li {
+      margin: 50px 0 0 10px;
+    }
+    .dwork, li {
+      margin: 50px 10px 10px 10px;
+    }
+    .first__project,
+    .second__project,
+    .third__project,
+    .forth__project {
+      align-self: center;
+      width: 80%;
+    }
   }
-  .nav a {
-    text-align: left;
-    max-width: 100%;
+  @media screen and (max-width: 840px) {
+    .header__title {
+      display: block;
+      font-size: 2.3em;
+      z-index: 4;
+    }
+    .second__header {
+      display: block;
+      font-size: 1.4em;
+      z-index: 5;
+    }
+    .header__logo {
+      margin: 0;
+      align-self: center;
+    }
   }
-  .header__inner {
-    width:100%;
-    justify-content:space-between;
-    align-items: flex-start;
+  @media screen and (min-width: 550px) and (max-width: 699px) {
+    .introduction {
+      max-height: 70%;
+    }
+    .my__info {
+      order: 3;
+      width: 100%;
+      overflow: auto;
+    }
+    .vison__Content {
+      width: 100%;
+      max-height: 570px;
+      margin: 0 10px 0 20px;
+    }
+    .vision__title {
+      font-size: 2em;
+    }
+    .vision__article {
+      font-size: 1.6em;
+      overflow: auto;
+      margin-left: 30px;
+      max-height: 90%;
+    }
+    .dwork__list {
+      flex-direction: column;
+    }
+    .work__list img {
+      height: 200px;
+    }
+    .work__list p {
+      height: 15%;
+    }
+    .work__list{
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .first__project,
+    .second__project,
+    .third__project,
+    .forth__project {
+      align-self: center;
+      width: 40%;
+      height: 40%;
+    }
+    .dfirst__project,
+    .dsecond__project {
+      align-self: center;
+      margin: 30px 30px 0 30px;
+    }
   }
-  .header__logo {
-    width:20%;
-    margin: 0;
-    align-self: flex-start;
+  @media screen and (min-width: 850px) {
+
+    .my__info {
+      max-width: 30%;
+      max-height: 100%;
+    }
   }
-  .title__block {
-    display: none;
+  @media screen and (min-width: 700px) {
+
+    .my__info {
+      max-width: 30%;
+      max-height: 550px;
+    }
+   .vison__Content {
+      max-height: 100%;
+      margin: 0 20px 0 10px;
+    }
+    .vision__article {
+      overflow: auto;
+    }
+    .work__list img {
+      height: 200px;
+    }
+    .first__project {
+      align-self: inherit;
+    }
+    .dfirst__project {
+      align-self: inherit;
+    }
+    .work__list {
+      flex-direction: row-reverse;
+    }
+    .work__list {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .first__project,
+    .second__project,
+    .third__project,
+    .forth__project {
+      align-self: center;
+      height: 40%;
+    }
+    .dwork__list {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .dfirst__project,
+    .dsecond__project {
+      width:80%;
+      margin: 30px 30px 0 30px;
+    }
   }
-  .title__block2 {
-    display: block;
-    order:2;
-    text-align: center;
-    align-self: flex-end;
-    width:50%;
-    margin: 0 30% 5px auto;
+  @media screen and (min-width: 1500px) {
+  main,.header__inner,.nav {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .introduction {
-    flex-direction: column;
-    align-items: center;
-    margin:30px 20px 20px 20px ;
-  }
-  .header__title2 {
-    display:inline-block;
-    font-weight: 300;
-    font-size: 2.2em;
-    color: #2d3c49;
-    align-self: center;
-  }
-  .second__header2{
-    margin: 0;
-    margin-right:10px;
-    display:inline-block;
-    font-weight: 200;
-    font-size: 1em;
-    color: #212121;
-  }
-  .my__info {
-    display: list-item;
-    border-bottom: 1px solid #E0E0E0;
-    width:100%;
-    text-align: left;
-  }
-  .header__menu {
-    align-self: center;
-    display: block;
-    position: absolute;
-    right: 10px;
-    padding: 1em;
-  }
-  .header__menu svg {
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-    fill: #E0E0E0;
-  }
-  .vison__Content {
-    background-image: none;
-    background-color: rgba(16, 89, 65,.4);
-    max-height:500px;
-    overflow:auto;
-  }
-  .vision__title {
-    color: #4f5f6d;
-  }
-  .vision__article {
-    color: #1d629e;
-  }
-  .work__list, .dwork__list {
-    flex-direction: column;
-  }
-  .work, li {
-    margin: 50px 0 0 10px;
-  }
-  .dwork, li {
-    margin: 50px 10px 10px 10px;
-  }
-  .first__project,.second__project,.third__project,.forth__project {
-    align-self: center;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 840px) {
-  .header__title {
-    display: block;
-    font-size: 2.3em;
-    z-index: 4;
-  }
-  .second__header {
-    display: block;
-    font-size: 1.4em;
-    z-index: 5;
-  }
-  .header__logo{
-    margin: 0;
-    align-self: center;
-  }
-}
-@media screen and (min-width: 550px) and (max-width:699px) {
-  .introduction {
-    max-height: 70%;
-  }
-  .my__info {
-    order:3;
-    width: 100%;
-    overflow:auto;
-  }
-  .vison__Content {
-    width: 100%;
-    max-height: 570px;
-    margin:0 10px 0 20px;
-  }
-  .vision__title {
-    font-size:2em;
-  }
-  .vision__article {
-    font-size:1.6em;
-    overflow:auto;
-    margin-left: 30px;
-    max-height: 90%;
+  .work__list {
+    flex-direction: row;
   }
   .dwork__list {
-    flex-direction: column;
+    flex-direction:row;
   }
-  .work__list img{
-    height: 200px;
+  .my__info {
+    max-width: 20%;
   }
-  .work__list p{
-    height:15%;
   }
-  .work__list{
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .first__project,.second__project,.third__project,.forth__project {
-    align-self:center;
-    width: 40%;
-    height: 40%;
-  }
-  .dfirst__project,.dsecond__project {
-    align-self: center;
-    margin: 30px 30px 0 30px;
-  }
-}
-}
-@media screen and (min-width: 850px) {
-.my__info {
-  max-width: 30%;
-  max-height: 100%;
-}
-}
-@media screen and (min-width: 700px) {
-.my__info {
-  max-width: 30%;
-  max-height: 550px;
-}
-.vison__Content {
-  max-height: 100%;
-  margin: 0 20px 0 10px;
-}
-.vision__article {
-  overflow: auto;
-}
-.work__list img {
-  height: 200px;
-}
-.first__project {
-  align-self: inherit;
-}
-.dfirst__project {
-  align-self: inherit;
-}
-.work__list {
-  flex-direction: row-reverse;
-}
-.dwork__list {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.dfirst__project,.dsecond__project{
-  width:80%;
-  margin: 30px 30px 0 30px;
-}
-}
-@media screen and (min-width: 1500px) {
-main,.header__inner,.nav {
-  width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.work__list {
-  flex-direction: row;
-}
-.dwork__list {
-  flex-direction:row;
-}
-.my__info {
-  max-width: 20%;
-}
-}
