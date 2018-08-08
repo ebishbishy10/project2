@@ -135,8 +135,8 @@ html{
   .second__project,
   .third__project,
   .forth__project {
-  align-self: center;
-  width: 80%;
+    align-self: center;
+    width: 80%;
   }
 }
 
