@@ -13,6 +13,10 @@ p {
 a {
 	text-decoration: none;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
 body {
 	font: 12px Roboto;
 	color: #424242;
@@ -38,6 +42,7 @@ header {
 	transition: min-height 0.3s;
 }
 li {
+	list-style: none;
 	display: inline-block;
 }
 li:hover {
@@ -141,7 +146,7 @@ footer a {
 	color: gray;
 }
 /* * * vision * */
-.introduction {
+.my__introduction {
 	display: flex;
 	margin-top: 30px;
 	justify-content: space-between;
