@@ -283,14 +283,6 @@ html {
   }
 }
 
-@media screen and (min-width: 850px) {
-  .my-info {
-    max-width: 30vw;
-    max-height: 100vh;
-    overflow: auto;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   main {
     width: 1200px;
